@@ -1,0 +1,14 @@
+.wrapper {
+
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $xlarge-start) {
+    max-width: $xlarge-start;
+  }
+
+}
+
+

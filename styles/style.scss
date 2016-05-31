@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+@import "utilities/index"; 
+@import 'base/index';
+@import 'layout/index';
+@import 'modules/index';
+
+/* ================================= 
+  Page Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1em;
+    font-family: sans-serif;
+    /*color: #fff;*/
+    color: #888;
+    background: #e8e9e9;
+
+}
+
+.main-nav {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+
+  @media screen and (min-width: $medium-start) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding: 1em;
+    list-style-type: none;
+    text-align: center;
+
+    @media screen and (min-width: $medium-start) {
+      padding: 0;
+      text-align: left;
+    }
+
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    
+  }
+}

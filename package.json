@@ -1,0 +1,19 @@
+{
+  "name": "omed-site",
+  "version": "0.0.1",
+  "dependencies": {
+    "browser-sync": "*",
+    "browserify": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-notify": "*",
+    "gulp-plumber": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-util": "^3.0.7",
+    "jquery": "*",
+    "vinyl-buffer": "*",
+    "vinyl-source-stream": "*"
+  }
+}
