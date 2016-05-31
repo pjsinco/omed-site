@@ -47,3 +47,23 @@
 ```
 
 * Codepen: [Responsive Flexbox Grid](http://codepen.io/guuslieben/pen/bVeObG)
+
+* Super markup:
+```html
+<div class="super">
+    <a href="http://thedo.osteopathic.org/2016/05/opioid-use-disorders-what-does-treatment-look-like/">
+        <figure class="super__figure">
+            <img class="image__img" src="http://thedo.osteopathic.org/wp-content/uploads/2015/03/addiction.jpg" />
+        </figure>
+    </a>
+    <div class="super__body--t-r ">
+        <h5 class="super__kicker">Explainer</h5>
+        <span class="super__date">May 27, 2016</span>
+        <h1 class="super__head">
+            <a href="http://thedo.osteopathic.org/2016/05/opioid-use-disorders-what-does-treatment-look-like/" class="super__link">
+              Opioid use disorders: What does treatment look like?                </a>
+        </h1>
+        <p class="super__body-text">Addiction medicine specialists William Morrone, DO, and Merideth Norris, DO, explain the treatment options for patients who abuse opioids.</p>
+    </div>
+</div>
+```
