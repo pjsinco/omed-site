@@ -1,9 +1,18 @@
 /*
- * Breakpoint
+ * Colors
  */
-$all: 'all';
-$screen: 'screen';
+$yellow: #ece81a;
+$warmgray: #babbb1;
+$red: #cb333b;
+$purple: #9063cd;
+$teal: #00b0b9;
 
+$primarycolor: $teal;
+$secondarycolor: $purple;
+
+$linkcolor: $teal;
+
+/* Breakpoints */
 $medium-start  : 30em; //  480px
 $large-start   : 48em; //  768px
 $xlarge-start  : 67.75em; //  1084px
@@ -13,3 +22,5 @@ $xxlarge-start : 90em; //  1440px
 $icomoon-font-path: "../fonts" !default;
 $icon-ctrl: "\ea50";
 
+$spacebetween: 1.25em;
+$gutter: 1.25em;
