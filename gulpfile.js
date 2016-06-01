@@ -48,8 +48,8 @@ gulp.task('compileSass', function() {
 
     gulp.src([styleFiles])
         .pipe(sourcemaps.init())
-        .pipe(autoprefixer())
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('styles'))
         .pipe(notify({ message: 'Sassed!' }))
