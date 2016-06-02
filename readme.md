@@ -72,3 +72,25 @@
 * Github: [ScrollReveal](https://github.com/jlmakes/scrollreveal.js)
 
 
+#####Thu Jun  2 06:10:10 2016 CDT 
+* Another take on a Jekyll-driven gulpfile:
+```js
+var gulp = require('gulp');
+var shell = require('gulp-shell');
+var browserSync = require('browser-sync').create();
+
+
+gulp.task('build', shell.task(['jekyll build --watch']));
+
+
+gulp.task('serve', function () {
+
+	browserSync.init({server: {baseDir: '_site/'}});
+
+	gulp.watch('_site/**/*.*').on('change', browserSync.reload);
+
+});
+
+
+gulp.task('default', ['build','serve']);
+```
