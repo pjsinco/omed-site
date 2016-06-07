@@ -97,3 +97,6 @@ gulp.task('default', ['build','serve']);
 
 #####Sun Jun  5 12:22:50 2016 CDT
 * Github: [Flexbox Grid](http://flexboxgrid.com/#top)
+
+#####Tue Jun  7 12:03:22 2016 CDT
+* Font conversion: [Online Font Converter - so simple](https://font-converter.net/en)

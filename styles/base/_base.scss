@@ -5,13 +5,14 @@
 }
 
 html {
-  height: 100%;
   font-size: 100%;
   line-height: 1;
   text-size-adjust: 100%;
 }
 
 body {
+  font-family: $primaryfont;
+  background-color: $white;
   height: 100%;
 }
 
