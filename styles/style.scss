@@ -1,8 +1,8 @@
 @charset "utf-8";
 
+@import 'vendor/breakpoint';
 @import "utilities/index"; 
+@import 'vendor/flexboxgrid';
 @import 'base/index';
 @import 'layout/index';
 @import 'modules/index';
-@import 'vendor/breakpoint';
-@import 'vendor/flexboxgrid';

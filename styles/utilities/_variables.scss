@@ -19,7 +19,11 @@ $accentcolor: $yellow;
 $linkcolor: $teal;
 
 /* Typography */
-$primaryfont: 'gotham-book', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-light: 'gotham-light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-bold: 'gotham-bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-book: 'gotham-book', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-medium: 'gotham-medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$primaryfont: $font-book;
 $font-color: $verydark;
 $font-color-lighter: $gray;
 $font-color-lightest: $mediumgray;
@@ -32,6 +36,8 @@ $medium-start  : 30em; //  480px
 $large-start   : 48em; //  768px
 $xlarge-start  : 67.75em; //  1084px
 $xxlarge-start : 90em; //  1440px
+
+$screen: 'screen';
 
 /* Fonts */
 $font-path: "../fonts" !default;

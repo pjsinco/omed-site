@@ -7,16 +7,21 @@
   }
 
 
-
 }
 
 .navmenu {
 }
 
 a.menu-link {
-  /*float: right;*/
   display: block;
   padding: 1em;
+  padding-right: 0;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  float: right;
+  text-decoration: none;
+  color: $white;
+
 }
 		.menu, .menu > ul ul {
 			clear: both;
@@ -58,7 +63,7 @@ a.menu-link {
 		}
 		
 		
-		@media screen and (min-width: 48.25em) {
+		@media screen and (min-width: $large-start) {
 			.pattern {
 				overflow: visible;
 			}

@@ -1,16 +1,54 @@
 .splash {
 
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   z-index: -1;
-  height: 100%;
+  height: 325px;
   width: 100%;
+  font-size: 1em;
   background-image: url(../img/omed-super-duotone-refresh-62.jpg);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+  color: $warmgray;
 
+  @include breakpoint($screen $large-start) {
+    height: 650px;
+  }
+
+  &__emph {
+    font-family: $font-bold;
+    font-size: 250%;
+    letter-spacing: -1px;
+    color: $teal;
+
+    @include breakpoint($screen $medium-start) {
+      /*font-size: 3.5em;*/
+    }
+
+    @include breakpoint($screen $large-start) {
+      /*font-size: 6.6875em;*/
+    }
+
+  }
+
+  &__block {
+
+    position: absolute;
+    bottom: 5%;
+
+  }
+
+  &__header {
+
+    @include breakpoint($screen $large-start) {
+      font-size: 2em;
+    }
+  }
   
+  &__body {
+
+  }
 
 }
