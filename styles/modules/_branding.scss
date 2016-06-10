@@ -1,0 +1,19 @@
+.branding {
+
+  &__block {
+
+    &--alpha {
+
+    }
+
+    &--beta {
+      display: none;
+
+      @include breakpoint($screen $large-start) {
+        display: block;
+      }
+    }
+
+  }
+
+}

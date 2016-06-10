@@ -1,6 +1,5 @@
 .header {
 
-  display: flex;
   height: 4.25em;
   background: $teal;
 
@@ -12,6 +11,10 @@
     right: 0;
     z-index: 100;
     background: rgba($teal, .3);
+
+  }
+
+  &__block {
 
   }
 

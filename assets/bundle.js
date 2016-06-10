@@ -6,7 +6,7 @@ $(document).ready(function() {
   $('body').addClass('js');
 
   var $menu = $('#menu');
-  var $menuLink = $('.menu-link');
+  var $menuLink = $('.menu__link');
   var $menuTrigger = $('.has-subnav > a');
 
   $menuLink.click(function(evt) {
