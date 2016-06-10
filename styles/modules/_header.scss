@@ -15,9 +15,10 @@
   }
 
   &__block {
+    /*@extend %container-fluid-base;*/
 
     @include breakpoint($screen $navflip) {
-      width: 50%;
+      /*width: 50%;*/
     }
 
     &:last-child {
