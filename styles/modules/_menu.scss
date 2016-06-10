@@ -13,9 +13,20 @@
 .menu {
 
   @extend %menu-base;
+  @extend %wrap-base;
+  @extend %container-fluid-base;
+
+  @include breakpoint($screen $navflip) {
+    
+  }
 
   &__block {
     position: relative;
+
+    @include breakpoint($screen $navflip) {
+      width: 28.125em;
+      background: $purple;
+    }
   
     /*@extend %container-fluid-base;*/
     /*@extend %wrap-base;*/
@@ -34,7 +45,7 @@
     right: 0;
 
     @include breakpoint($screen $navflip) {
-      
+      position: static;
     }
   }
 
@@ -42,7 +53,7 @@
     color: $white;
 
     @include breakpoint($screen $navflip) {
-      float: right;
+      /*float: right;*/
     }
   }
   
@@ -91,6 +102,10 @@
 .js .menu {
   position: relative;
   top: .5625em;
+
+  @include breakpoint($screen $navflip) {
+    position: static;
+  }
 }
 
 .menu.active, .js .menu > ul ul.active {
@@ -136,6 +151,10 @@
 	.menu ul {
 		margin: 0 0 0 -0.25em;
 		border: 0;
+
+    @include breakpoint($screen $navflip) {
+      max-width: 26.125em;
+    }
 	}
 	.menu li a {
 		border: 0;
