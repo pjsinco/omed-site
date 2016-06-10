@@ -4,7 +4,10 @@
   background: $teal;
 
   @include breakpoint($screen $navflip) {
+    margin: 0 auto;
+    max-width: $contentwidth;
     background: none;
+    
 //    position: fixed;
 //    top: 0;
 //    left: 0;
