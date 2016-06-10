@@ -6,7 +6,8 @@
 %js-menu-base {
   overflow: hidden;
   max-height: 0;
-  background: rgba(0,0,0,0.1);
+  /*background: rgba(0,0,0,0.1);*/
+  background: $teal;
 }
 
 .menu {
@@ -14,7 +15,6 @@
   @extend %menu-base;
 
   &__block {
-    
     position: relative;
   }
 
@@ -29,13 +29,21 @@
     left: 0;
     right: 0;
   }
+
+  &__items {
+    color: $white;
+
+    @include breakpoint($screen $navchange) {
+      float: right;
+    }
+  }
   
   &__item {
     
   }
 
   & > ul {
-    border-top: 1px solid #808080;
+    /*border-top: 1px solid #808080;*/
   }
 
   & > ul ul {
@@ -43,10 +51,10 @@
   }
 
   & li a {
-    color: #000;
+    color: inherit;
     display: block;
     padding: 0.8em;
-    border-bottom: 1px solid #808080;
+    /*border-bottom: 1px solid #808080;*/
     position: relative;
 
   }
@@ -69,6 +77,11 @@
 
 }
 
+.js .menu {
+  position: relative;
+  top: .5625em;
+}
+
 .menu.active, .js .menu > ul ul.active {
 	max-height: 55em;
 }
@@ -88,11 +101,12 @@
 }
 
 
-@media screen and (min-width: $large-start) {
+@include breakpoint($screen $navchange) {
 	.pattern {
 		overflow: visible;
 	}
-	a.menu-link {
+
+	.menu__link {
 	   display: none;
 	}
 	.js .menu, .js .menu > ul ul {
@@ -101,7 +115,7 @@
 		background: none;
 	}
 	.js .menu > ul ul {
-		background: #808080;
+		background: $teal;
 		display: none;
 	}
 	.js .menu > ul li:hover > ul {

@@ -32,10 +32,16 @@ $font-color-lightest: $mediumgray;
 $contentwidth: 63em;
 
 /* Breakpoints */
-$medium-start  : 30em; //  480px
-$large-start   : 48em; //  768px
-$xlarge-start  : 67.75em; //  1084px
-$xxlarge-start : 90em; //  1440px
+$small-start        : 20em;     // 320px
+$small-minor-start  : 25.625em; // 410px
+$medium-start       : 30em;     // 480px
+$medium-minor-start : 36em;     // 576px
+$large-start        : 48em;     // 768px
+$large-minor-start  : 56em;     // 896px
+$xlarge-start       : 67.75em;  // 1084px
+$xxlarge-start      : 90em;     // 1440px
+
+$navchange: $large-minor-start;
 
 $screen: 'screen';
 

@@ -9,7 +9,7 @@
     &--beta {
       display: none;
 
-      @include breakpoint($screen $large-start) {
+      @include breakpoint($screen $navchange) {
         display: block;
       }
     }

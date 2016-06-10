@@ -3,14 +3,14 @@
   height: 4.25em;
   background: $teal;
 
-  @include breakpoint($screen $large-start) {
+  @include breakpoint($screen $navchange) {
     
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    background: rgba($teal, .3);
+//    position: fixed;
+//    top: 0;
+//    left: 0;
+//    right: 0;
+//    z-index: 100;
+//    background: rgba($teal, .3);
 
   }
 
