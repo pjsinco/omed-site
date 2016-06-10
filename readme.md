@@ -100,3 +100,6 @@ gulp.task('default', ['build','serve']);
 
 #####Tue Jun  7 12:03:22 2016 CDT
 * Font conversion: [Online Font Converter - so simple](https://font-converter.net/en)
+
+#####Fri Jun 10 08:35:22 2016 CDT
+* Slide deck: [Intro to Flexbox](http://arelia.github.io/flex-talk/#/)
