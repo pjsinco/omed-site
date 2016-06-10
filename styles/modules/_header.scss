@@ -1,5 +1,7 @@
 .header {
 
+  display: flex;
+  height: 4.25em;
   background: $teal;
 
   @include breakpoint($screen $large-start) {
