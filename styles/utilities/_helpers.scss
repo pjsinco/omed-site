@@ -1,4 +1,27 @@
 /* Helpers: Floats and Clearing */
+%container-base {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+%container-fluid-base {
+  @extend %container-base;
+  padding-right: 1em;
+  padding-left: 1em;
+
+  @include breakpoint($screen $medium-start) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    
+  }
+}
+
+%wrap-base {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: $contentwidth;
+}
+
 %clearfix {
   content: "";
   display: table;

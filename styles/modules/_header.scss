@@ -1,10 +1,10 @@
 .header {
 
-  height: 4.25em;
+  height: $navbarheight;
   background: $teal;
 
-  @include breakpoint($screen $navchange) {
-    
+  @include breakpoint($screen $navflip) {
+    background: none;
 //    position: fixed;
 //    top: 0;
 //    left: 0;
@@ -16,6 +16,16 @@
 
   &__block {
 
+    @include breakpoint($screen $navflip) {
+      width: 50%;
+    }
+
+    &:last-child {
+
+      @include breakpoint($screen $navflip) {
+        float: right;
+      }
+    }
   }
 
 

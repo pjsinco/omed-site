@@ -16,10 +16,13 @@
 
   &__block {
     position: relative;
+  
+    @extend %container-fluid-base;
+    @extend %wrap-base;
   }
 
   &__logo {
-    margin-left: 1em;
+    /*margin-left: 1em;*/
     padding-top: 1em;
   }
 
@@ -28,12 +31,16 @@
     top: 20%;
     left: 0;
     right: 0;
+
+    @include breakpoint($screen $navflip) {
+      
+    }
   }
 
   &__items {
     color: $white;
 
-    @include breakpoint($screen $navchange) {
+    @include breakpoint($screen $navflip) {
       float: right;
     }
   }
@@ -53,21 +60,24 @@
   & li a {
     color: inherit;
     display: block;
-    padding: 0.8em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
     /*border-bottom: 1px solid #808080;*/
     position: relative;
 
   }
 
   &__link {
+    @extend %container-fluid-base;
     display: block;
-    padding: 1em;
-    padding-right: 1em;
+    padding-top: 1em;
     padding-bottom: 1em;
-    padding-left: 1em;
     float: right;
     text-decoration: none;
     color: $white;
+
+    
+    
   }
 
 
@@ -93,7 +103,7 @@
 	right: 0;
 	display: block;
 	font-size: 1.5em;
-	padding: 0.25em 0.5em;
+	padding: 0.25em 0;
 }
 
 .menu li.has-subnav > a.active:after {
@@ -101,7 +111,7 @@
 }
 
 
-@include breakpoint($screen $navchange) {
+@include breakpoint($screen $navflip) {
 	.pattern {
 		overflow: visible;
 	}

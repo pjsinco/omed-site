@@ -41,7 +41,6 @@ $large-minor-start  : 56em;     // 896px
 $xlarge-start       : 67.75em;  // 1084px
 $xxlarge-start      : 90em;     // 1440px
 
-$navchange: $large-minor-start;
 
 $screen: 'screen';
 
@@ -52,5 +51,9 @@ $font-path: "../fonts" !default;
 $icomoon-font-path: $font-path;
 $icon-ctrl: "\ea50";
 
+
+/* Measurements */
+$navflip: $large-minor-start;
 $spacebetween: 1.25em;
 $gutter: 1.25em;
+$navbarheight: 4.25em;

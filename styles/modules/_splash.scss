@@ -17,6 +17,10 @@
     height: 650px;
   }
 
+  @include breakpoint($screen $navflip) {
+    top: -$navbarheight;
+  }
+
   &__emph {
     font-family: $font-bold;
     font-size: 250%;

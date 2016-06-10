@@ -9,7 +9,7 @@
     &--beta {
       display: none;
 
-      @include breakpoint($screen $navchange) {
+      @include breakpoint($screen $navflip) {
         display: block;
       }
     }

@@ -1,18 +1,10 @@
 .container-fluid,
 .container {
-  margin-right: auto;
-  margin-left: auto;
+  @extend %container-base;
 }
 
 .container-fluid {
-  padding-right: 1rem;
-  padding-left: 1rem;
-
-  @include breakpoint($screen $medium-start) {
-    padding-right: 2rem;
-    padding-left: 2rem;
-    
-  }
+  @extend %container-fluid-base;
 }
 
 .row {
