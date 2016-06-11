@@ -4,6 +4,8 @@
   background: $teal;
 
   @include breakpoint($screen $navflip) {
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
     max-width: $contentwidth;
     background: none;
@@ -27,7 +29,7 @@
     &:last-child {
 
       @include breakpoint($screen $navflip) {
-        float: right;
+        /*float: right;*/
       }
     }
   }

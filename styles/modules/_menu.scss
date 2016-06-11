@@ -24,8 +24,24 @@
     position: relative;
 
     @include breakpoint($screen $navflip) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
       width: 28.125em;
-      background: $purple;
+      height: 9.1875em;
+      background: rgba($purple, .2);
+    }
+  }
+
+  &__list {
+    @include breakpoint($screen $navflip) {
+      display: flex;
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
   
     /*@extend %container-fluid-base;*/
@@ -36,6 +52,12 @@
     /*margin-left: 1em;*/
     @extend %container-fluid-base;
     padding-top: 1em;
+
+    @include breakpoint($screen $navflip) {
+      position: relative;
+      top: 1em;
+      flex-grow: 9;
+    }
   }
 
   &__nav {
@@ -46,6 +68,7 @@
 
     @include breakpoint($screen $navflip) {
       position: static;
+      flex-grow: 1;
     }
   }
 
@@ -53,7 +76,8 @@
     color: $white;
 
     @include breakpoint($screen $navflip) {
-      /*float: right;*/
+      opacity: .6;
+      border-top: 1px solid rgba(255,255,255,.2);
     }
   }
   
@@ -160,7 +184,7 @@
 		border: 0;
 	}
 	.menu li.has-subnav > a {
-		padding-right: 2em;
+		/*padding-right: 2em;*/
 	}
 	.menu li.has-subnav > a:after {
 		/*content: ">";*/

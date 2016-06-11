@@ -103,3 +103,6 @@ gulp.task('default', ['build','serve']);
 
 #####Fri Jun 10 08:35:22 2016 CDT
 * Slide deck: [Intro to Flexbox](http://arelia.github.io/flex-talk/#/)
+
+#####Sat Jun 11 07:29:46 2016 CDT
+* CSS-Tricks: [The “Blur Up” Technique for Loading Background Images](https://css-tricks.com/the-blur-up-technique-for-loading-background-images/)
