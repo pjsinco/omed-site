@@ -12,13 +12,15 @@
     letter-spacing: 1px;
     position: relative;
 
-    &:after {
-      content: '';
-      position: absolute;
-      top: -.5em;
-      bottom: -.5em;
-      left: -.5em;
-      right: -.5em;
+    @include breakpoint($screen $navflip) {
+      &:after {
+        content: '';
+        position: absolute;
+        top: -.5em;
+        bottom: -.5em;
+        left: -.5em;
+        right: -.5em;
+      }
     }
 
     &:hover {
