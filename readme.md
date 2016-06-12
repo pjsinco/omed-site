@@ -106,3 +106,6 @@ gulp.task('default', ['build','serve']);
 
 #####Sat Jun 11 07:29:46 2016 CDT
 * CSS-Tricks: [The “Blur Up” Technique for Loading Background Images](https://css-tricks.com/the-blur-up-technique-for-loading-background-images/)
+
+#####Sun Jun 12 07:08:26 2016 CDT
+* Blog: [Nicer Navigation with CSS Transitions](http://www.newmediacampaigns.com/blog/nicer-navigation-with-css-transitions-part-2)
