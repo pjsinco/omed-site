@@ -6,4 +6,24 @@
   &__block {
   }
 
+  &__link {
+    text-transform: uppercase;
+    font-size: .8125em;
+    letter-spacing: 1px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: -.5em;
+      bottom: -.5em;
+      left: -.5em;
+      right: -.5em;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
 }
