@@ -1,11 +1,17 @@
+$highlightablebreak: $large-start;
+
 .highlightable {
 
-  height: 13.75em;
   padding-top: 1em;
   padding-bottom: 1em;
   text-align: center;
   background: $teal;
+  border-top: 7px solid $yellow;
+  border-bottom: 7px solid $yellow;
 
+  @include breakpoint($screen $highlightablebreak) {
+    /*height: 13.75em;*/
+  }
   
 
   &__block {
@@ -22,6 +28,22 @@
 
   &__body {
 
+  }
+
+  &__imagecontainer {
+    position: relative;
+    bottom: -3em;
+    max-width: 435px;
+
+    @include breakpoint($screen $highlightablebreak) {
+      top: -3em;
+      bottom: initial;
+      max-width: none;
+    }
+  }
+
+  &__image {
+    box-shadow: 5px 5px 13px rgba($verydark,.3);
   }
 
 }

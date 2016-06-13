@@ -113,3 +113,5 @@ gulp.task('default', ['build','serve']);
 
 #####Mon Jun 13 06:56:43 2016 CDT
 * Website tool: [How to Center in CSS](http://howtocenterincss.com/)
+
+* jQuery docs: [Code Organization Concepts](https://learn.jquery.com/code-organization/concepts/)
