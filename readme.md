@@ -109,3 +109,7 @@ gulp.task('default', ['build','serve']);
 
 #####Sun Jun 12 07:08:26 2016 CDT
 * Blog: [Nicer Navigation with CSS Transitions](http://www.newmediacampaigns.com/blog/nicer-navigation-with-css-transitions-part-2)
+    * Codepen : [Animated Navigation Examples](http://codepen.io/toddsynan/full/pJuyx)
+
+#####Mon Jun 13 06:56:43 2016 CDT
+* Website tool: [How to Center in CSS](http://howtocenterincss.com/)

@@ -26,6 +26,7 @@
     @include breakpoint($screen $navflip) {
       display: flex;
       flex-direction: column;
+      flex-wrap: nowrap;
       justify-content: flex-end;
       width: 28.125em;
       height: 9.1875em;
@@ -34,13 +35,16 @@
   }
 
   &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
     @include breakpoint($screen $navflip) {
-      display: flex;
       flex-grow: 1;
       flex-shrink: 0;
       flex-basis: auto;
       flex-direction: row;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       justify-content: space-between;
     }
   
@@ -76,13 +80,24 @@
     color: $white;
 
     @include breakpoint($screen $navflip) {
-      opacity: .6;
-      border-top: 1px solid rgba(255,255,255,.2);
+      /*opacity: .6;*/
+      border-top: 1px solid rgba($white,.1);
     }
   }
   
   &__item {
     top: .1875em;
+
+    @include breakpoint($screen $navflip) {
+      &:not(:last-child):after {
+//        content: '';
+//        position: absolute;
+//        height: 100%;
+//        border-right: 1px solid fuchsia;
+//        top: 0;
+//        right: -20px;
+      }
+    }
   }
 
   & > ul {
@@ -165,7 +180,7 @@
 		background: none;
 	}
 	.js .menu > ul ul {
-    background: $teal;
+    background: rgba(0,0,0, .2);
     position: absolute;
     opacity: 0;
     transition: $transitionduration ease;
@@ -208,7 +223,7 @@
 		margin: 0 0.25em;
 	}
 	.menu > ul > li {
-		display: inline-block;
+		/*display: inline-block;*/
 		position: relative;
 	}
 	.menu > ul ul {
@@ -221,12 +236,21 @@
 		position: relative;
 	}
 	.menu > ul ul.level-2 {
-		top: 3em;
-		left: 0;
+		top: 2.375em;
+		left: -28px;
+    padding-left: 28px;
 	}
 
   /* New */
-  .level-2 {
-    /*position: absolute;*/
+  .level-2 li {
+    font-size: .8125em;
+    opacity: .6;
+  }
+
+  .level-2 li a {
+    &:hover {
+      text-decoration: none;
+      opacity: 1;
+    }
   }
 }

@@ -7,10 +7,13 @@
   }
 
   &__link {
+    position: relative;
     text-transform: uppercase;
     font-size: .8125em;
     letter-spacing: 1px;
-    position: relative;
+    opacity: .6;
+    transition-property: color, opacity;
+    transition-duration: $transitionduration;
 
     @include breakpoint($screen $navflip) {
       &:after {
@@ -25,6 +28,9 @@
 
     &:hover {
       text-decoration: none;
+      color: $teal;
+      opacity: 1;
+      /*font-family: $font-bold;*/
     }
   }
 
