@@ -1,0 +1,27 @@
+.highlightable {
+
+  height: 13.75em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  background: $teal;
+
+  
+
+  &__block {
+
+  }
+
+  &__kicker {
+    color: $white;
+  }
+
+  &__header {
+    color: $yellow;
+  }
+
+  &__body {
+
+  }
+
+}
