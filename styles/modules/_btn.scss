@@ -1,0 +1,29 @@
+.btn {
+
+  display: inline-block;
+  margin-bottom: 0;
+  font-family: $font-book;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-image: none;
+  background-color: transparent;
+  white-space: nowrap;
+  transition-property: border, color, background;
+  transition-duration: $transitionduration;
+
+  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
+  
+  &:hover, &:focus {
+    color: $btn-default-color;
+    text-decoration: none;
+  }
+
+  &--default {
+    @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border)
+  }
+
+  &--primary {
+    @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border)
+  }
+}

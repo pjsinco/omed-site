@@ -27,12 +27,27 @@ $primaryfont: $font-book;
 $font-color: $verydark;
 $font-color-lighter: $gray;
 $font-color-lightest: $mediumgray;
-$bodylineheight: 1.4;
+$line-height-base: 1.4 !default;
+$bodylineheight: $line-height-base;
 $bodylineheight-bigger: 1.65;
 $font-size-base: 1em;
 
 // Width of the content area
 $contentwidth: 63em;
+
+/* */
+$padding-base-vertical: .5em;
+$padding-base-horizontal: 1em;
+
+/* Buttons */
+$btn-border-radius-base: .25em;
+$btn-default-color: $font-color;
+$btn-default-bg: transparent;
+$btn-default-border: $warmgray;
+
+$btn-primary-color: $teal;
+$btn-primary-bg: transparent;
+$btn-primary-border: $teal;
 
 /* Breakpoints */
 $small-start        : 20em;     // 320px
