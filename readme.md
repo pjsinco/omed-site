@@ -118,3 +118,5 @@ gulp.task('default', ['build','serve']);
 
 #####Tue Jun 14 06:28:59 2016 CDT 
 * Blog: [A Primer to Front-end SVG Hacking](http://dbushell.com/2013/02/04/a-primer-to-front-end-svg-hacking/)
+
+* Deploy to: ```/home/rempatri/public_html/obuild```
