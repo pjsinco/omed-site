@@ -124,3 +124,6 @@ gulp.task('default', ['build','serve']);
 * Webdesignerdepot: [How to create an animated sticky header, with CSS3 and jQuery](http://www.webdesignerdepot.com/2014/05/how-to-create-an-animated-sticky-header-with-css3-and-jquery/)
 
 * Blog: [50 Great Examples of Websites Using Fixed Position Navigation Menu](http://designbeep.com/2012/01/04/50-great-examples-of-websites-using-fixed-position-navigation-menu/)  
+
+* Treehouse video: [Forum Tip: Create a Sticky Navigation with CSS and jQuery](https://teamtreehouse.com/community/forum-tip-create-a-sticky-navigation-with-css-and-jquery-2)
+
