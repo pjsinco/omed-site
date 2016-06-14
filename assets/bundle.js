@@ -6,7 +6,14 @@ $(document).ready(function() {
 
   $('body').addClass('js');
 
-  var windowWidth = $(window).width();
+
+  // We don't care about resize events on screens below 768px wide
+  var actionableScreenWidth = 768; // $large-start breakpoint
+
+  // The difference in pixel height between a highlightable image and 
+  // its containing block
+  var difference = 96;
+
   var $menu = $('#menu');
   var $menuLink = $('.menu__link');
   var $menuTrigger = $('.has-subnav > a');
@@ -17,13 +24,17 @@ $(document).ready(function() {
   /* TODO just blocking in for now */
   $(window).on('resize', function(evt) {
     evt.preventDefault();
-    console.log(windowWidth);
-    console.log('highlightable h: ' + $highlightableImage.height());
-    console.log('highlightableImage h: ' + $highlightable.height());
 
-    // TODO conditional 
-    // Make we're at a big enuf screen size before changing the height 
-    $highlightable.height($highlightableImage.height() - 96);
+    var windowWidth = $(window).width();
+    console.log(windowWidth);
+
+    if (windowWidth >= actionableScreenWidth) {
+      $highlightable.height($highlightableImage.height() - difference);
+    } else {
+      $highlightable.css('height', '100%');
+    }
+
+
   });
 
   $menuLink.click(function(evt) {
