@@ -4,9 +4,13 @@
     <div class="menu__block">
       <div class="menu__logo">
         <div class="branding__block--omed">
-            <a href="#">
-              <img src="img/omed-logo-white-alone.png" class="branding__logo--small" style="max-width: 187px; height: auto;" alt="OMED 2016 logo" />
-              <img src="img/omed-logo-teal.png" class="branding__logo--large" alt="OMED 2016 logo" />
+            <a href="#" class="svg" title="OMED 2016">
+              <object class="branding__logo--small" id="omedLogoWhite" data="img/omed-logo-white-alone.svg" type="image/svg+xml">
+                <div id="svgFallback"></div>
+              </object>
+              <object class="branding__logo--large" id="omedLogoTeal" data="img/omed-logo-teal-white-tagline.svg" type="image/svg+xml">
+                <div id="svgFallback"></div>
+              </object>
             </a>
         </div> <!-- .branding__block-alpha -->
       </div>
@@ -51,7 +55,7 @@
   <div class="header__block">
     <div class="branding__block--aoa">
       <a class="svg" href="http://www.osteopathic.org" title="American Osteopathic Association">
-        <object data="img/aoa-logo-horiz-small-white.svg" type="image/svg+xml">
+        <object id="aoaLogo" data="img/aoa-logo-horiz-small-white.svg" type="image/svg+xml">
           <div id="svgFallback"></div>
         </object>
       </a>
