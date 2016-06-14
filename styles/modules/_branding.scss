@@ -3,7 +3,9 @@
   &__block {
 
     &--omed {
-      width: 24.375em;
+      @include breakpoint($screen $navflip) {
+        width: 24.375em;
+      }
     }
 
     &--aoa {

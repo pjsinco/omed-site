@@ -18,7 +18,9 @@ layout: default
 <div class="intro__block container-fluid pageblock">
   <div class="row center-xs">
     <div class="col-xs-12">
-      <img class="intro__logo" src="img/omed-logo-date.png" alt="OMED 2016 logo" />
+      <object class="intro__logo" id="introOmedLogo" data="img/omed-logo-date.svg" type="image/svg+xml">
+        <div id="svgFallback"></div>
+      </object>
     </div> <!-- .col -->
   </div><!-- .row -->
   <div class="row center-xs">
@@ -32,7 +34,9 @@ layout: default
   <div class="row center-xs">
     <div class="col-xs-12 col-md-4 quicklinks__item">
       <div class="quicklinks__body">
-        <img class="quicklinks__image" src="img/icon-ticket.png" alt="Ticket" />
+        <object id="ticket" class="quicklinks__icon" data="img/icon-ticket.svg" type="image/svg+xml">
+          <div class="svg-fallback"></div>
+        </object>
         <h4 class="quicklinks__header">Register</h4>
         <p class="quicklinks__body">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
         <a href='#' class="btn btn--primary">Go</a>
@@ -40,7 +44,9 @@ layout: default
     </div> <!-- .col -->
     <div class="col-xs-12 col-md-4 quicklinks__item">
       <div class="quicklinks__body">
-        <img class="quicklinks__image" src="img/icon-airliner.png" alt="Ticket" />
+        <object id="airliner" class="quicklinks__icon" data="img/icon-airliner.svg" type="image/svg+xml">
+          <div class="svg-fallback"></div>
+        </object>
         <h4 class="quicklinks__header">Travel</h4>
         <p class="quicklinks__body">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dap bus, tellus ac cursus commodo. </p>
         <a href='#' class="btn btn--primary">Go</a>
@@ -48,7 +54,9 @@ layout: default
     </div> <!-- .col -->
     <div class="col-xs-12 col-md-4 quicklinks__item">
       <div class="quicklinks__body">
-        <img class="quicklinks__image" src="img/icon-telephone.png" alt="Ticket" />
+        <object id="telephone" class="quicklinks__icon" data="img/icon-telephone.svg" type="image/svg+xml" style="max-width: 4.75em;">
+          <div class="svg-fallback"></div>
+        </object>
         <h4 class="quicklinks__header">Get Help</h4>
         <p class="quicklinks__body">Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor.</p>
         <a href='#' class="btn btn--primary">Go</a>

@@ -1,0 +1,17 @@
+---
+layout: none
+permalink: .htaccess
+---
+
+RewriteEngine: On
+
+AddType image/svg+xml .svg .svgz
+
+<IfModule mod_deflate.c>
+  <IfModule mod_filter.c>
+    AddOutputFilterByType DEFLATE "image/svg+xml" \
+                                  "text/css" \
+                                  "text/html" \
+                                  "text/javascript" \
+  </IfModule>
+</IfModule>
