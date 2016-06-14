@@ -115,3 +115,6 @@ gulp.task('default', ['build','serve']);
 * Website tool: [How to Center in CSS](http://howtocenterincss.com/)
 
 * jQuery docs: [Code Organization Concepts](https://learn.jquery.com/code-organization/concepts/)
+
+#####Tue Jun 14 06:28:59 2016 CDT 
+* Blog: [A Primer to Front-end SVG Hacking](http://dbushell.com/2013/02/04/a-primer-to-front-end-svg-hacking/)
