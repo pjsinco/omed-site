@@ -11,25 +11,18 @@
     text-transform: uppercase;
     font-size: .8125em;
     letter-spacing: 1px;
-    opacity: .6;
+    /*opacity: .6;*/
     transition-property: color, opacity;
     transition-duration: $transitionduration;
 
-    @include breakpoint($screen $navflip) {
-      &:after {
-        content: '';
-        position: absolute;
-        top: -.5em;
-        bottom: -.5em;
-        left: -.5em;
-        right: -.5em;
-      }
+    &:after {
+      @include expand-target();
     }
 
     &:hover {
       text-decoration: none;
-      color: $teal;
-      opacity: 1;
+      /*color: $teal;*/
+      /*opacity: 1;*/
       /*font-family: $font-bold;*/
     }
   }

@@ -20,6 +20,13 @@
     
   }
 
+  &__branding {
+    @include breakpoint($screen $navflip) {
+      width: 24.375em;
+    }
+
+  }
+
   &__block {
     position: relative;
 
@@ -31,6 +38,10 @@
       width: 28.125em;
       height: 9.1875em;
       background: rgba($purple, .2);
+    }
+
+    &.sticky {
+      position: fixed;
     }
   }
 
@@ -111,8 +122,8 @@
   & li a {
     color: inherit;
     display: block;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     /*border-bottom: 1px solid #808080;*/
     position: relative;
 
@@ -149,16 +160,29 @@
 
 .menu.active, .js .menu > ul ul.active {
 	max-height: 55em;
+  padding-bottom: 1rem;
 }
 
 .menu li.has-subnav > a:after {
 	content: '+';
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 1.1rem;
+	left: 96%;
 	display: block;
 	font-size: 1.5em;
 	padding: 0.25em 0;
+
+  @include breakpoint($screen $medium-start) {
+    left: 97%;
+  }
+
+  @include breakpoint($screen $large-minor-start) {
+    left: 98%;
+  }
+
+  @include breakpoint($screen $large-start) {
+    left: 99%;
+  }
 }
 
 .menu li.has-subnav > a.active:after {
