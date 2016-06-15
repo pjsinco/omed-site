@@ -27,4 +27,15 @@
     }
   }
 
+  &__icon {
+    margin-bottom: .5rem;
+  }
+
+  &__label {
+    display: block;
+    text-transform: none;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
 }
