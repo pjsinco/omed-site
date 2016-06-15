@@ -127,3 +127,9 @@ gulp.task('default', ['build','serve']);
 
 * Treehouse video: [Forum Tip: Create a Sticky Navigation with CSS and jQuery](https://teamtreehouse.com/community/forum-tip-create-a-sticky-navigation-with-css-and-jquery-2)
 
+#####Wed Jun 15 07:07:31 2016 CDT
+* Blog: [A Primer to Front-end SVG Hacking](http://dbushell.com/2013/02/04/a-primer-to-front-end-svg-hacking/)
+
+* Treehouse: [How do you make a SVG clickable?](https://teamtreehouse.com/community/how-do-you-make-a-svg-clickable)
+
+* Blog: [6 Top Landing Page Trends So Far For 2015 (with examples)](https://instapage.com/blog/landing-page-trends)

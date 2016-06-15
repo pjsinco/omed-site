@@ -14,7 +14,7 @@
     padding-left: 2rem;
   }
 
-  @include breakpoint($screen $contentwidth + 2em) {
+  @include breakpoint($screen $contentwidth + 2rem) {
     padding-right: 0 !important;
     padding-left: 0 !important;
   }

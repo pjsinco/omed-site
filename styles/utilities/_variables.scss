@@ -34,26 +34,26 @@ $line-height-large: 1.33 !default;
 $bodylineheight: $line-height-base;
 $bodylineheight-bigger: 1.65;
 
-$font-size-base: 1em;
-$font-size-small: .875em;
-$font-size-large: 1.25em;
+$font-size-base: 1rem;
+$font-size-small: .875rem;
+$font-size-large: 1.25rem;
 
 
 // Width of the content area
-$contentwidth: 63em;
+$contentwidth: 63rem;
 
 /* Spacing */
-$padding-base-vertical: .5em;
-$padding-base-horizontal: 1em;
+$padding-base-vertical: .5rem;
+$padding-base-horizontal: 1rem;
 
-$padding-xs-vertical: .0625em;
-$padding-xs-horizontal: .3125em;
+$padding-xs-vertical: .0625rem;
+$padding-xs-horizontal: .3125rem;
 
-$padding-small-vertical: .3125em;
-$padding-small-horizontal: .625em;
+$padding-small-vertical: .3125rem;
+$padding-small-horizontal: .625rem;
 
-$padding-large-vertal: 1.125em;
-$padding-large-horizontal: 1.25em;
+$padding-large-vertal: 1.125rem;
+$padding-large-horizontal: 1.25rem;
 
 /* Components */
 $border-radius-base: 4px !default;
@@ -80,14 +80,14 @@ $btn-primary-border: $teal;
 $btn-reverse-border: $white;
 
 /* Breakpoints */
-$small-start        : 20em;     // 320px
-$small-minor-start  : 25.625em; // 410px
-$medium-start       : 30em;     // 480px
-$medium-minor-start : 36em;     // 576px
-$large-start        : 48em;     // 768px
-$large-minor-start  : 56em;     // 896px
-$xlarge-start       : 67.75em;  // 1084px
-$xxlarge-start      : 90em;     // 1440px
+$small-start        : 20rem;     // 320px
+$small-minor-start  : 25.625rem; // 410px
+$medium-start       : 30rem;     // 480px
+$medium-minor-start : 36rem;     // 576px
+$large-start        : 48rem;     // 768px
+$large-minor-start  : 56rem;     // 896px
+$xlarge-start       : 67.75rem;  // 1084px
+$xxlarge-start      : 90rem;     // 1440px
 
 
 $screen: 'screen';
@@ -102,8 +102,8 @@ $icon-ctrl: "\ea50";
 
 /* Numbers we use */
 $navflip: $large-minor-start;
-$spacebetween: 1.25em;
-$gutter: 1.25em;
-$navbarheight: 4.25em;
+$spacebetween: 1.25rem;
+$gutter: 1.25rem;
+$navbarheight: 4.25rem;
 $transitionduration: .3s;
 
