@@ -133,3 +133,6 @@ gulp.task('default', ['build','serve']);
 * Treehouse: [How do you make a SVG clickable?](https://teamtreehouse.com/community/how-do-you-make-a-svg-clickable)
 
 * Blog: [6 Top Landing Page Trends So Far For 2015 (with examples)](https://instapage.com/blog/landing-page-trends)
+
+#####Thu Jun 16 09:37:26 2016 CDT
+* Codepen: [Page Load Animations](http://codepen.io/brendeng/pen/sDjIC)
