@@ -1,3 +1,21 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
 .splash {
 
   position: relative;
@@ -45,6 +63,7 @@
   }
 
   &__header {
+    animation-delay: .7s;
 
     @include breakpoint($screen $large-start) {
       font-size: 2em;
@@ -52,6 +71,7 @@
   }
   
   &__body {
+    animation-delay: 1.4s;
 
   }
 
