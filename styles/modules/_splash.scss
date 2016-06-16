@@ -7,6 +7,44 @@
   }
 }
 
+@keyframes first {
+
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+
+.fade-in {
+
+  &--first {
+      opacity: 0;
+      animation-name: first;
+      animation-timing-function: ease-in;
+      animation-iteration-count: once;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+  }
+
+  &--second {
+      opacity: 0;
+      animation-name: fade-in;
+      animation-timing-function: ease-in;
+      animation-iteration-count: once;
+      animation-duration: .25s;
+      animation-fill-mode: forwards;
+  }
+}
+
+
 .fade-in {
   opacity: 0;
   animation-name: fade-in;
@@ -63,7 +101,7 @@
   }
 
   &__header {
-    animation-delay: .7s;
+    /*animation-delay: .7s;*/
 
     @include breakpoint($screen $large-start) {
       font-size: 2em;

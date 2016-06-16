@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  skrollr.init();
+
   console.log('hiya');
 
 
