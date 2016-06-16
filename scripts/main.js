@@ -1,12 +1,8 @@
 $(document).ready(function() {
 
-  skrollr.init();
-
   console.log('hiya');
 
-
   $('body').addClass('js');
-
 
   // We don't care about resize events on screens below 768px wide
   var actionableScreenWidth = 768; // $large-start breakpoint

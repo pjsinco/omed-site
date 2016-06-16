@@ -25,7 +25,7 @@
 
 .fade-in {
 
-  &--first {
+  &--left {
       opacity: 0;
       animation-name: first;
       animation-timing-function: ease-in;
@@ -34,14 +34,6 @@
       animation-fill-mode: forwards;
   }
 
-  &--second {
-      opacity: 0;
-      animation-name: fade-in;
-      animation-timing-function: ease-in;
-      animation-iteration-count: once;
-      animation-duration: .25s;
-      animation-fill-mode: forwards;
-  }
 }
 
 
@@ -74,7 +66,7 @@
   }
 
   @include breakpoint($screen $navflip) {
-    top: -$navbarheight;
+    /*top: -$navbarheight;*/
   }
 
   &__emph {
