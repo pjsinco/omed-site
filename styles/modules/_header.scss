@@ -4,11 +4,12 @@
   background: $teal;
 
   @include breakpoint($screen $navflip) {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: $contentwidth;
-    background: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
     
 //    position: fixed;
 //    top: 0;
