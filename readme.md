@@ -140,3 +140,6 @@ gulp.task('default', ['build','serve']);
 #####Fri Jun 17 13:43:38 2016 CDT
 * Blog: [CriticalCSS In Action](https://bocoup.com/weblog/criticalcss-in-action)
 
+* Github: [jquery.shorten](https://github.com/viralpatel/jquery.shorten)
+
+* Blog: [Dynamically shortened Text with “Show More” link using jQuery](http://viralpatel.net/blogs/dynamically-shortened-text-show-more-link-jquery/)
