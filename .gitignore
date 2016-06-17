@@ -3,6 +3,7 @@ _site
 .jekyll-metadata
 node_modules
 makefile
+img
 
 *.swp
 *.swo
