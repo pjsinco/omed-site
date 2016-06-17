@@ -4,10 +4,14 @@
   background: $teal;
 
   @include breakpoint($screen $navflip) {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 3em;
     left: 0;
     right: 0;
+    background: none;
+    transition-property: background-color;
+    transition-duration: .9s;
+    transition-timing-function: ease;
     /*display: flex;*/
     /*justify-content: space-between;*/
     
@@ -18,7 +22,15 @@
 //    z-index: 100;
 //    background: rgba($teal, .3);
 
+    &.sticky {
+      position: fixed;  
+      top: 0;
+      z-index: 100;
+      background-color: rgba($white, .97);
+      box-shadow: 0 0px 18px rgba($verydark,.1);
+    }
   }
+
 
   &__block {
     /*@extend %container-fluid-base;*/

@@ -136,3 +136,7 @@ gulp.task('default', ['build','serve']);
 
 #####Thu Jun 16 09:37:26 2016 CDT
 * Codepen: [Page Load Animations](http://codepen.io/brendeng/pen/sDjIC)
+
+#####Fri Jun 17 13:43:38 2016 CDT
+* Blog: [CriticalCSS In Action](https://bocoup.com/weblog/criticalcss-in-action)
+

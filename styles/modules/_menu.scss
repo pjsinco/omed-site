@@ -109,7 +109,13 @@
 
     @include breakpoint($screen $navflip) {
       /*opacity: .6;*/
-      border-top: 1px solid rgba($white,.1);
+      visibility: hidden;
+      /*border-top: 1px solid rgba($white,.1);*/
+
+      .sticky & {
+        visibility: visible;
+        color: $teal;
+      }
     }
   }
   
@@ -162,7 +168,6 @@
 
 .js .menu {
   position: relative;
-  top: .5625em;
 
   @include breakpoint($screen $navflip) {
     position: static;
