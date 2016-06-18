@@ -331,3 +331,5 @@ gulp.task('default', ['build','serve']);
 * Scotch.io: [CSS3 Page Landing Animations](https://scotch.io/tutorials/css3-page-landing-animations)
 
 * CSS-Tricks: [A Complete Guide to SVG Fallbacks](https://css-tricks.com/a-complete-guide-to-svg-fallbacks/)
+
+* HTML5Rocks: [High Performance Animations](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
