@@ -62,14 +62,14 @@ a {
   }
 
   // https://teamtreehouse.com/community/how-do-you-make-a-svg-clickable
-  &.svg:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-  }
+//  &.svg:after {
+//    content: '';
+//    position: absolute;
+//    top: 0;
+//    bottom: 0;
+//    right: 0;
+//    left: 0;
+//  }
 }
 
 object {

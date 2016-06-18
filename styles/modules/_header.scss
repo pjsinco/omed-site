@@ -9,8 +9,8 @@
     left: 0;
     right: 0;
     background: none;
-    transition-property: background-color;
-    transition-duration: .9s;
+    transition-property: background-color, border;
+    transition-duration: $transitionduration;
     transition-timing-function: ease;
     /*display: flex;*/
     /*justify-content: space-between;*/
@@ -28,6 +28,7 @@
       z-index: 100;
       background-color: rgba($white, .97);
       box-shadow: 0 0px 18px rgba($verydark,.1);
+      border-bottom: 1px solid #e9f0f3;
     }
   }
 

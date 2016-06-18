@@ -1,6 +1,6 @@
 %menu-base {
   clear: both;
-  transition: all 0.3s ease-out;
+  transition: all $transitionduration ease;
 }
 
 %js-menu-base {
@@ -106,6 +106,7 @@
 
   &__items {
     color: $white;
+    transition-property: color;
 
     @include breakpoint($screen $navflip) {
       /*opacity: .6;*/

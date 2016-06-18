@@ -1,0 +1,70 @@
+.omed-logo {
+  animation-name: fadein;
+  animation-duration: 1s;
+  transition-property: fill;
+  transition-duration: .3s;
+  transition-timing-function: ease-in;
+  fill: $white;
+
+  /*opacity: .5;*/
+  /*transition-property: opacity;*/
+  /*transition-duration: .3s;*/
+
+  .sticky & {
+    fill: $teal;
+  }
+
+  &:hover {
+      cursor: pointer;
+      fill: $teal;
+  }
+
+  &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+  }
+
+
+}
+
+
+.omed-tagline {
+
+  /*.omed-logo & {*/
+    /*display: none;*/
+  /*}*/
+
+}
+
+.omed-rule {
+
+  /*.omed-logo & {*/
+    /*display: none;*/
+  /*}*/
+
+}
+
+.omed-big-words {
+
+}
+
+.omed-tagline {
+
+}
+
+
+@keyframes fadein {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
