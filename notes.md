@@ -327,3 +327,7 @@ gulp.task('default', ['build','serve']);
 #####Sat Jun 18 07:10:43 2016 CDT
 * Codepen: [Stagger Multiple Animations](http://codepen.io/GreenSock/pen/BHabA)
     * like The Undefeated uses in its menu
+
+* Scotch.io: [CSS3 Page Landing Animations](https://scotch.io/tutorials/css3-page-landing-animations)
+
+* CSS-Tricks: [A Complete Guide to SVG Fallbacks](https://css-tricks.com/a-complete-guide-to-svg-fallbacks/)
