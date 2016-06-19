@@ -1,3 +1,17 @@
+@keyframes mainnavreveal {
+
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
 .header {
 
   height: $navbarheight;
@@ -9,9 +23,9 @@
     left: 0;
     right: 0;
     background: none;
-    transition-property: background-color, border;
-    transition-duration: $transitionduration;
-    transition-timing-function: ease;
+    /*transition-property: background-color, border;*/
+    /*transition-duration: $transitionduration;*/
+    /*transition-timing-function: ease;*/
     /*display: flex;*/
     /*justify-content: space-between;*/
     
@@ -29,6 +43,7 @@
       background-color: $white;
       box-shadow: 0 0px 18px rgba($verydark,.1);
       border-bottom: 1px solid #e9f0f3;
+      animation: mainnavreveal .3s ease-out;
     }
   }
 
