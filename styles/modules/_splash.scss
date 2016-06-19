@@ -81,12 +81,10 @@
     letter-spacing: -1px;
     color: $yellow;
 
-    @include breakpoint($screen $medium-start) {
+    @include breakpoint($navflip) {
       /*font-size: 3.5em;*/
-    }
-
-    @include breakpoint($screen $large-start) {
-      /*font-size: 6.6875em;*/
+      font-size: 1.6em;
+      letter-spacing: -6px;
     }
 
   }

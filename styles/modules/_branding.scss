@@ -25,6 +25,11 @@
   &--menu {
     @include breakpoint($screen $navflip) {
       width: 24.375em;
+      opacity: .7;
+    }
+
+    .sticky & {
+      opacity: 1;
     }
   }
 

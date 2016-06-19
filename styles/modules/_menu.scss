@@ -1,6 +1,6 @@
 %menu-base {
   clear: both;
-  transition: all $transitionduration ease;
+  transition: max-height $transitionduration ease;
 }
 
 %js-menu-base {
@@ -121,7 +121,7 @@
 
   &__items {
     color: $white;
-    transition-property: color;
+    /*transition-property: color;*/
 
     @include breakpoint($screen $navflip) {
       /*opacity: .6;*/
@@ -174,7 +174,28 @@
     float: right;
     text-decoration: none;
     color: $white;
+    
+    &.active {
 
+      &:after {
+        content: "Close";
+
+        @include breakpoint($screen $navflip) {
+          content: none;
+        }
+      }
+
+    }
+  
+
+    &:after {
+      content: "Menu";
+      text-decoration: none;
+
+      @include breakpoint($screen $navflip) {
+        content: none;
+      }
+    }
     
     
   }

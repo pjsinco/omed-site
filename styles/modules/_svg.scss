@@ -3,11 +3,11 @@
   
   @include breakpoint($screen $navflip) {
     display: block;
-    animation-name: fadein;
-    animation-duration: 1s;
-    transition-property: fill;
-    transition-duration: .3s;
-    transition-timing-function: ease-in;
+    /*animation-name: fadein;*/
+    /*animation-duration: 1s;*/
+    /*transition-property: fill;*/
+    /*transition-duration: .3s;*/
+    /*transition-timing-function: ease-in;*/
     fill: $white;
   }
 
