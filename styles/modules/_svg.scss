@@ -39,6 +39,10 @@
 
 .omed-tagline {
 
+  .sticky & {
+    display: none;
+  }
+
   /*.omed-logo & {*/
     /*display: none;*/
   /*}*/
@@ -46,6 +50,10 @@
 }
 
 .omed-rule {
+
+  .sticky & {
+    display: none;
+  }
 
   /*.omed-logo & {*/
     /*display: none;*/

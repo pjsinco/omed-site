@@ -85,10 +85,13 @@
     padding-top: 1em;
 
     @include breakpoint($screen $navflip) {
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
       position: relative;
       top: 1em;
-      padding-top: 0;
-      flex-grow: 9;
+      width: 15em;
+      /*flex-grow: 9;*/
     }
   }
 
