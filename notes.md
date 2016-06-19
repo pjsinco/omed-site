@@ -335,3 +335,6 @@ gulp.task('default', ['build','serve']);
 * HTML5Rocks: [High Performance Animations](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
 
     >  Modern browsers can animate four things really cheaply: position, scale, rotation and opacity.
+
+#####Sun Jun 19 13:49:48 2016 CDT
+* Blog: [SVG ON THE WEB: A Practical Guide](https://svgontheweb.com/)
