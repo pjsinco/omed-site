@@ -83,12 +83,12 @@ $(document).ready(function() {
   var $highlightableImage = $('#highlightableImage');
   var $highlightable = $('#highlightable');
 
-  $(window).on('scroll', function(evt) {
-    if ($(this).scrollTop() > actionableScrollTop && 
-        $(this).width() >= actionableScreenWidth) {
-      $('.header').addClass('sticky');
+  $(document).on('scroll', function(evt) {
+    var y = $(this).scrollTop();
+    if (y > actionableScrollTop) {
+      $('html').addClass('sticky');
     } else {
-      $('.header').removeClass('sticky');
+      $('html').removeClass('sticky');
     }
     //console.log('scrolltop: ' + $(this).scrollTop());
   });

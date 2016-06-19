@@ -333,3 +333,5 @@ gulp.task('default', ['build','serve']);
 * CSS-Tricks: [A Complete Guide to SVG Fallbacks](https://css-tricks.com/a-complete-guide-to-svg-fallbacks/)
 
 * HTML5Rocks: [High Performance Animations](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
+
+    >  Modern browsers can animate four things really cheaply: position, scale, rotation and opacity.
