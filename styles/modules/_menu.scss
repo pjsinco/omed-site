@@ -78,6 +78,8 @@
       margin: 0 auto;
 
       @include breakpoint($screen $navflip) {
+        position: relative;
+        top: .25rem;
         flex-grow: 1;
         justify-content: flex-end;
         align-items: flex-end
