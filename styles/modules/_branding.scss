@@ -16,6 +16,10 @@
     &:hover {
       opacity: 1;
     }
+
+    .sticky & {
+      opacity: 0;
+    }
   }
 
   &__block {
