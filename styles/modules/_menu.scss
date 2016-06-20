@@ -64,7 +64,7 @@
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
-        margin-right: 2em !important;
+        /*margin-right: 2em !important;*/
         /*float: left;*/
       }
 
@@ -139,7 +139,7 @@
     top: .1875em;
 
     @include breakpoint($screen $navflip) {
-      width: 8rem;
+      /*width: 8rem;*/
 
 
     }
@@ -197,6 +197,12 @@
     float: right;
     text-decoration: none;
     color: $white;
+
+    @include breakpoint($screen $navflip) {
+      .nav__list--major & {
+        font-size: 14px
+      }
+    }
     
     &.active {
 
