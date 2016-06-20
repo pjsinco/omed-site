@@ -26,7 +26,6 @@
     @include breakpoint($screen $navflip) {
       width: 24.375em;
     }
-
   }
 
   &__block {
@@ -64,7 +63,7 @@
         flex-basis: auto;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: flex-start;
+        justify-content: space-around;
         margin-right: 2em !important;
         /*float: left;*/
       }
@@ -80,7 +79,7 @@
 
       @include breakpoint($screen $navflip) {
         flex-grow: 1;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: flex-end
       }
 
@@ -141,11 +140,33 @@
 
     @include breakpoint($screen $navflip) {
       width: 8rem;
+
+
     }
 
     &--minor {
-      flex-basis: 25px;
-      max-width: 4.875rem;
+      flex-basis: 85px;
+      /*max-width: 4.875rem;*/
+
+      @include breakpoint($screen $navflip) {
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 11px;
+          left: -5px;
+          border-left: 1px solid rgba($teal, 0.14);
+        }
+
+        &:last-child:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 11px;
+          right: -5px;
+          border-right: 1px solid rgba($teal, 0.14);
+        }
+      }
     }
   }
 
