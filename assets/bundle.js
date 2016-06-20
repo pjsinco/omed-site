@@ -73,6 +73,7 @@ $(document).ready(function() {
   var actionableScreenWidth = 768; // $large-start breakpoint
   var actionableScrollTop = 35;
 
+
   // The difference in pixel height between a highlightable image and 
   // its containing block
   var difference = 96;
@@ -81,8 +82,10 @@ $(document).ready(function() {
   var $menuLink = $('.menu__link');
   var $menuTrigger = $('.has-subnav > a');
 
+  var windowWidth = $(window).width();
   var $highlightableImage = $('#highlightableImage');
   var $highlightable = $('#highlightable');
+  adjustHighlightableHeight();
 
   $(document).on('scroll', function(evt) {
     var y = $(this).scrollTop();
@@ -98,11 +101,11 @@ $(document).ready(function() {
   $(window).on('resize', function(evt) {
     evt.preventDefault();
 
-    var windowWidth = $(window).width();
-    console.log(windowWidth);
+    windowWidth = $(window).width();
 
     if (windowWidth >= actionableScreenWidth) {
-      $highlightable.height($highlightableImage.height() - difference);
+      adjustHighlightableHeight();
+      //$highlightable.height($highlightableImage.height() - difference);
     } else {
       $highlightable.css('height', '100%');
     }
@@ -124,6 +127,9 @@ $(document).ready(function() {
       .toggleClass('active');
   });
 
+  function adjustHighlightableHeight() {
+    $highlightable.height($highlightableImage.height() - difference);
+  }
 
 
 });
