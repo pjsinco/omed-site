@@ -1,3 +1,26 @@
+.aoa-logo {
+  @include breakpoint($screen $navflip) {
+    opacity: .8;
+    transition-property: opacity;
+    transition-duration: $transitionduration;
+    transition-timing-function: ease-in;
+
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+  }
+}
+
 .omed-logo {
   display: none;
   
@@ -5,9 +28,10 @@
     display: block;
     /*animation-name: fadein;*/
     /*animation-duration: 1s;*/
-    /*transition-property: fill;*/
-    /*transition-duration: .3s;*/
-    /*transition-timing-function: ease-in;*/
+    transition-property: opacity;
+    transition-duration: $transitionduration;
+    transition-timing-function: ease-in;
+    opacity: .7;
     fill: $white;
   }
 
@@ -17,11 +41,12 @@
 
   .sticky & {
     fill: $teal;
+    opacity: 1;
   }
 
   &:hover {
       cursor: pointer;
-      fill: $teal;
+      opacity: 1;
   }
 
   &:after {
@@ -88,5 +113,5 @@
 
 #menuHotel {
   width: 20px;
-
 }
+

@@ -9,7 +9,7 @@
     right: 0;
     width: 12.25em;
     z-index: 10;
-    opacity: .8;
+    /*opacity: .8;*/
     transition: opacity;
     transition-duration: $transitionduration;
 
@@ -29,11 +29,11 @@
   &--menu {
     @include breakpoint($screen $navflip) {
       width: 24.375em;
-      opacity: .7;
+      /*opacity: .7;*/
     }
 
     .sticky & {
-      opacity: 1;
+      /*opacity: 1;*/
     }
   }
 
@@ -80,4 +80,4 @@
 
 }
 
-.big-words{fill:#FF0033;}
+/*.big-words{fill:#FF0033;}*/
