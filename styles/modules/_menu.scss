@@ -158,12 +158,13 @@
   }
 
   & li a {
-    color: inherit;
     display: block;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     /*border-bottom: 1px solid #808080;*/
     position: relative;
+    cursor: pointer;
+    color: inherit;
 
   }
 
@@ -262,7 +263,7 @@
 		background: none;
 	}
 	.js .menu > ul ul {
-    background: rgba(0,0,0, .2);
+    background: $white;
     position: absolute;
     opacity: 0;
     transition: $transitionduration ease;
@@ -278,13 +279,14 @@
 	.menu ul {
 		margin: 0 0 0 -0.25em;
 		border: 0;
-
-    @include breakpoint($screen $navflip) {
-      /*max-width: 26.125em;*/
-    }
 	}
 	.menu li a {
 		border: 0;
+    transition: color $transitionduration ease;
+
+    &:hover {
+      color: darken($teal, 20%);
+    }
 	}
 	.menu li.has-subnav > a {
 		/*padding-right: 2em;*/
@@ -318,15 +320,16 @@
 		position: relative;
 	}
 	.menu > ul ul.level-2 {
-		top: 2.375em;
-		left: -28px;
+		top: $navbarheight;
+		left: 0;
     padding-left: 28px;
+
 	}
 
   /* New */
   .level-2 li {
     font-size: .8125em;
-    opacity: .6;
+    /*opacity: .6;*/
   }
 
   .level-2 li a {
