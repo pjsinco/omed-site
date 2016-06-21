@@ -2,20 +2,12 @@
 layout: default
 ---
 
-
-<section class="splash">
-  <div class="wrap">
-    <div class="splash__block container-fluid fade-in--left">
-      <div class="splash__header">
-        <span class="splash__emph">Refresh</span> ipsum dolor
-      </div>
-      <div class="splash__body">
-        Vivamus sagittis lacus vel augue laoreet rutrum September 17–20. Donec sed odio dui Donec id elit non mieget metus.
-      </div>
-    </div> <!-- .splash__block -->
-  </div> <!-- .container-fluid -->
-</section> <!-- .splash -->
-
+{% include splash.html 
+    emph="Refresh" 
+    header="ipsum dolor" 
+    text="Vivamus sagittis lacus vel augue laoreet rutrum September 17–20. Donec sed odio dui Donec id elit non mieget metus." 
+    splash_variant = "home"
+%}
 
 <section class="intro__block container-fluid pageblock">
   <div class="row center-xs">

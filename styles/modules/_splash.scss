@@ -1,3 +1,23 @@
+%splash-base {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 325px;
+  width: 100%;
+  font-size: 1em;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: $white;
+  
+  @include breakpoint($screen $navflip) {
+    height: 650px;
+    top: -$navbarheight;
+  }
+  
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -48,33 +68,32 @@
 
 .splash {
 
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  height: 325px;
-  width: 100%;
-  font-size: 1em;
-  background-image: url(../img/omed-super-audience.jpg);
-
-/*  background-image: url(data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABQAAD/4QODaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzExMSA3OS4xNTgzMjUsIDIwMTUvMDkvMTAtMDE6MTA6MjAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9IkY0Rjk3Rjc3NTE4MEMzRjJBNjEyNEJEQ0ZFRjBDMDY0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkQ5ODhCNjZGMkNCNzExRTZBQTE3RTUzMkUzOTQ4NTE5IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkQ5ODhCNjZFMkNCNzExRTZBQTE3RTUzMkUzOTQ4NTE5IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ZDU3NWU5OWItYmNkNi00YTcyLTkxNjEtOTVhOTk5ODMyMmJhIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6ZGE4MTg1YmEtNzUxZS0xMTc5LWJiNmYtZmJiNGEwNWQwOTI0Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+0ASFBob3Rvc2hvcCAzLjAAOEJJTQQEAAAAAAAPHAFaAAMbJUccAgAAAgACADhCSU0EJQAAAAAAEPzhH4nIt8l4LzRiNAdYd+v/7gAOQWRvYmUAZMAAAAAB/9sAhAACAgICAgICAgICAwICAgMEAwICAwQFBAQEBAQFBgUFBQUFBQYGBwcIBwcGCQkKCgkJDAwMDAwMDAwMDAwMDAwMAQMDAwUEBQkGBgkNCwkLDQ8ODg4ODw8MDAwMDA8PDAwMDAwMDwwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAQACgDAREAAhEBAxEB/8QAggAAAgMBAAAAAAAAAAAAAAAABggEBQcJAQABBQEAAAAAAAAAAAAAAAADAQIEBQYAEAABBAIBAgQFBQAAAAAAAAACAQMEBQYHERITACEiFDFBUTIjYUJSQwgRAAEDAgQEBgMAAAAAAAAAAAERAgMABCExURLwQaEFYYGR4XIUsSIT/9oADAMBAAIRAxEAPwBM6CNi9psXFMaxpubk+HXnsrG5uxZUxbVx15XWCkA2ratOOECoBivHHmn1ob2JsTVBx66VqbaYyPDUwOemZNadju0te4bls7H4b0Kyo3Zctu+SwFvsctdUdjp5b6e04109tE/sBR4+3kX1zJC14zT8cLUg3TWSFhVFCJ4++FS39z2aPWuw8TrYg4BQE5S+8Rs0nBKkxWGffIJIjSiEntgaL6l6lJFVOfDnwMMgTAoCBx60M3bhu5gEgnp6DKgRixwfMs8LAcdlQ2q1ysq661swMnFZsxLuypkYXCbR5xV/AXKohLz/AC82m2e1m92vSk+5Hu2N4NFeb7QxbXce8wyzmQZlxBt5USfaVzKI4aEwb4Bw0q9sjdEfQqr0uCSL8PDYLN8qnIJzpZr+OIhrsTjgOPGnB0zF1xjGGu0FJCjNYm7YyZjcJXgNWGJb77o97zQkREIBH58In08BtezXBvJ57huD9obiv6N1HoahydxjETGQuxaCvyKZeS0qMvVdLdT9V6ytF6Dj5PezJt/CY6HSrUktTVB91tEEOSBxBReelS9P6h7NHO6/uA4ODEaMQQC4Aglq+GlTO5SxxwsdGQcSRqAqtXz1pL4FBsvKJOXawxKgtJLDuQHeWrEYHFBtth024xO90kEGvNDUiXzVBXlenxqTbq/dzAT3rPf1c1qKgwWukGIaP1XoXT2V32T4rV5jssYtnNfyKWpSmWiYcYaZitoXa6RE3OVIBQjX93w8GEBkRp5kDyWq6W4c3e8ZBpI+QCjrVt/sPVOlMu0lk+y6nG4uObJweogWI2NM17YJZMk1HNqcHHQ9+I14P7xXjglROFaItgQZV0Er3P3OxNf/2Q==); */
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  color: $white;
- 
+  &--home {
+    @extend %splash-base;
+    background-image: url(../img/omed-splash-audience.jpg);
+  }
   
+  &--connection {
+    @extend %splash-base;
+    background-image: url(../img/omed-splash-poster.jpg);
+  }
+
+  &--education {
+    @extend %splash-base;
+    background-image: url(../img/omed-splash-audience.jpg);
+  }
+
+  &--inspiration {
+    @extend %splash-base;
+    background-image: url(../img/omed-splash-audience.jpg);
+  }
+
+
+
   &-enhanced {
 	background-image: url(../img/omed-super-audience.jpg);
   }
 
-  @include breakpoint($screen $navflip) {
-    height: 650px;
-  }
-
-  @include breakpoint($screen $navflip) {
-    top: -$navbarheight;
-  }
 
   &__emph {
     font-family: $font-book;
