@@ -338,3 +338,13 @@ gulp.task('default', ['build','serve']);
 
 #####Sun Jun 19 13:49:48 2016 CDT
 * Blog: [SVG ON THE WEB: A Practical Guide](https://svgontheweb.com/)
+
+######Tue Jun 21 06:14:49 2016 CDT
+* Github: [Slick: the last carousel you'll ever need](https://github.com/kenwheeler/slick/)
+
+* Animating on page scroll:
+    * Demo: [http://demo.getgrav.org/woo-skeleton/](http://demo.getgrav.org/woo-skeleton/)
+    * Code: [http://demo.getgrav.org/woo-skeleton/user/themes/woo/js/main.js](http://demo.getgrav.org/woo-skeleton/user/themes/woo/js/main.js)
+    * Waypoints library: [http://imakewebthings.com/waypoints/](http://imakewebthings.com/waypoints/)
+
+
