@@ -349,4 +349,4 @@ gulp.task('default', ['build','serve']);
     * Code: [http://demo.getgrav.org/woo-skeleton/user/themes/woo/js/main.js](http://demo.getgrav.org/woo-skeleton/user/themes/woo/js/main.js)
     * Waypoints library: [http://imakewebthings.com/waypoints/](http://imakewebthings.com/waypoints/)
 
-
+* Website: [Jekyll Tips](http://jekyll.tips/guide/getting-started-with-jekyll/)

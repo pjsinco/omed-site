@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   console.log('hiya');
 
-  $('body').addClass('js');
+  //$('body').addClass('js');
 
   // We don't care about resize events on screens below 768px wide
   var actionableScreenWidth = 768; // $large-start breakpoint
@@ -13,6 +13,7 @@ $(document).ready(function() {
   // its containing block
   var difference = 96;
 
+  var $html = $('html');
   var $menu = $('#menu');
   var $menuLink = $('.menu__link');
   var $menuTrigger = $('.has-subnav > a');
@@ -23,6 +24,9 @@ $(document).ready(function() {
   adjustHighlightableHeight();
 
   $(document).on('scroll', function(evt) {
+    if (!($html).hasClass('revealable')) {
+      return;
+    }
     var y = $(this).scrollTop();
     if (y > actionableScrollTop) {
       $('html').addClass('sticky');

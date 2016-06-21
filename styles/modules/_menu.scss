@@ -3,6 +3,10 @@
   transition: max-height $transitionduration ease;
 }
 
+%menu-item-base {
+  top: .1875em;
+}
+
 %js-menu-base {
   overflow: hidden;
   max-height: 0;
@@ -175,12 +179,10 @@
   }
   
   &__item {
-    top: .1875em;
+    @extend %menu-item-base;
 
-    @include breakpoint($screen $navflip) {
-      /*width: 8rem;*/
-
-
+    &--active {
+      @extend %menu-item-base;
     }
 
     &--minor {

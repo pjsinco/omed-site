@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html class="{% if page.inside %}sticky{% else %}revealable{% endif %}">
 
   {% include head.html %}
 
-  <body>
+  <body class="js">
 
     {% include header.html %}
 

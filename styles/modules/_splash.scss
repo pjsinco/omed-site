@@ -1,7 +1,5 @@
 %splash-base {
   position: relative;
-  top: 0;
-  left: 0;
   z-index: -1;
   height: 325px;
   width: 100%;
@@ -68,6 +66,12 @@
 
 .splash {
 
+  &-inside {
+    @include breakpoint($screen $navflip) {
+      top: 0;
+    }
+  }
+  
   &--home {
     @extend %splash-base;
     background-image: url(../img/omed-splash-audience.jpg);
@@ -76,11 +80,13 @@
   &--connection {
     @extend %splash-base;
     background-image: url(../img/omed-splash-poster.jpg);
+    
   }
 
   &--education {
     @extend %splash-base;
-    background-image: url(../img/omed-splash-central.jpg);
+    background-image: url(https://placekitten.com/1766/725);
+    /* background-image: url(../img/omed-splash-central.jpg); */
   }
 
   &--inspiration {
@@ -112,7 +118,6 @@
 
     position: absolute;
     bottom: 5%;
-
   }
 
   &__header {

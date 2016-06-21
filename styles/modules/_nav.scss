@@ -15,6 +15,10 @@
     transition-property: color, opacity;
     transition-duration: $transitionduration;
 
+    .menu__item--active & {
+      font-family: $font-bold;
+    }
+
     & > i {
       display: none;
     }

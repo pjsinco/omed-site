@@ -1,3 +1,31 @@
+%header-fixed-base {
+  @include breakpoint($screen $navflip) {
+    position: fixed;  
+    top: 0;
+    z-index: 100;
+    background-color: $white;
+    box-shadow: 0 0px 18px rgba($verydark,.1);
+    border-bottom: 1px solid #e9f0f3;
+  }
+}
+
+%header-base {
+  height: $navbarheight;
+  background: $teal;
+
+  @include breakpoint($screen $navflip) {
+    background: none;
+    
+    animation-name: fadein;
+    animation-duration: 1s;
+    transition-property: fill;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
+
+  }
+}
+
+
 @keyframes mainnavreveal {
 
   0% {
@@ -14,44 +42,24 @@
 
 .header {
 
-  height: $navbarheight;
-  background: $teal;
+  @extend %header-base;
+
+  .sticky & {
+    @extend %header-fixed-base;
+    animation: mainnavreveal .3s ease-out;
+  }
 
   @include breakpoint($screen $navflip) {
     position: absolute;
     top: 3em;
     left: 0;
     right: 0;
-    background: none;
-    /*transition-property: background-color, border;*/
-    /*transition-duration: $transitionduration;*/
-    /*transition-timing-function: ease;*/
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    
-    animation-name: fadein;
-    animation-duration: 1s;
-    transition-property: fill;
-    transition-duration: .3s;
-    transition-timing-function: ease-in;
-//    position: fixed;
-//    top: 0;
-//    left: 0;
-//    right: 0;
-//    z-index: 100;
-//    background: rgba($teal, .3);
 
-    .sticky & {
-      position: fixed;  
-      top: 0;
-      z-index: 100;
-      background-color: $white;
-      box-shadow: 0 0px 18px rgba($verydark,.1);
-      border-bottom: 1px solid #e9f0f3;
-      animation: mainnavreveal .3s ease-out;
-    }
   }
 
+  &--fixed {
+    @extend %header-fixed-base;
+  }
 
   &__block {
     /*@extend %container-fluid-base;*/
