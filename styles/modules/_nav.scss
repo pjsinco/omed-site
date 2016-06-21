@@ -15,8 +15,24 @@
     transition-property: color, opacity;
     transition-duration: $transitionduration;
 
+    & > i {
+      display: none;
+    }
+
+    .menu__list--major & {
+      border-bottom: 1px solid $white;
+
+      @include breakpoint($screen $navflip) {
+        border-bottom: none;
+      }
+    }
+
     @include breakpoint($screen $navflip) {
       text-align: center;
+
+      & > i {
+        display: initial;
+      }
     }
 
     &:after {

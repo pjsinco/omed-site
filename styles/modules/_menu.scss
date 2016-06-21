@@ -10,6 +10,43 @@
   background: $teal;
 }
 
+.level-1 {
+
+  & > li > a {
+    font-family: $font-medium;
+
+    @include breakpoint($screen $navflip) {
+      font-family: $font-book;
+    }
+
+  }
+}
+
+
+.level-2 {
+
+  .menu__list--major & a {
+    /*margin-left: 2rem;*/
+    opacity: .8;
+    font-size: .875em;
+
+    @include breakpoint($screen $navflip) {
+      opacity: 1;
+      font-size: inherit;
+    }
+  }
+
+  .menu__list--major & li {
+    border-top: 1px solid rgba(255, 255, 255, 0.17);
+
+    @include breakpoint($screen $navflip) {
+      border-top: none;
+    }
+  }
+
+}
+
+
 .menu {
 
   @extend %menu-base;
@@ -252,29 +289,29 @@
 }
 
 .menu li.has-subnav > a:after {
-	content: '+';
-	position: absolute;
-	top: 1.1rem;
-	left: 96%;
-	display: block;
-	font-size: 1.5em;
-	padding: 0.25em 0;
-
-  @include breakpoint($screen $medium-start) {
-    left: 97%;
-  }
-
-  @include breakpoint($screen $large-minor-start) {
-    left: 98%;
-  }
-
-  @include breakpoint($screen $large-start) {
-    left: 99%;
-  }
+//	content: '+';
+//	position: absolute;
+//	top: 1.1rem;
+//	left: 96%;
+//	display: block;
+//	font-size: 1.5em;
+//	padding: 0.25em 0;
+//
+//  @include breakpoint($screen $medium-start) {
+//    left: 97%;
+//  }
+//
+//  @include breakpoint($screen $large-minor-start) {
+//    left: 98%;
+//  }
+//
+//  @include breakpoint($screen $large-start) {
+//    left: 99%;
+//  }
 }
 
 .menu li.has-subnav > a.active:after {
-	content: "-";
+	/*content: "-";*/
 }
 
 

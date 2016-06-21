@@ -115,6 +115,7 @@ $h-space: 1em;
 
 
 ##### Project brief example
+```
 color palette
 -------------
 
@@ -176,6 +177,7 @@ title: ...
 - blcok: 
 [text]
 [more text]
+```
 
 
 #####Tue May 31 10:11:23 2016 CDT

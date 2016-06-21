@@ -52,19 +52,17 @@ $(document).ready(function() {
     evt.preventDefault();
     $menu.toggleClass('active');
     $menuLink.toggleClass('active');
+    activateMenus();
   });
 
-  $menuTrigger.click(function(evt) {
-    evt.preventDefault();
-    var $this = $(this);
-    $this.toggleClass('active')
-      .next('ul')
-      .toggleClass('active');
-  });
+  //$menuTrigger.click(activateMenus);
 
   function adjustHighlightableHeight() {
     $highlightable.height($highlightableImage.height() - difference);
   }
 
+  function activateMenus() {
+    $('.level-2').addClass('active');
+  }
 
 });
