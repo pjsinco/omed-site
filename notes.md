@@ -350,3 +350,5 @@ gulp.task('default', ['build','serve']);
     * Waypoints library: [http://imakewebthings.com/waypoints/](http://imakewebthings.com/waypoints/)
 
 * Website: [Jekyll Tips](http://jekyll.tips/guide/getting-started-with-jekyll/)
+
+* Website: [Jekyll Cheat Sheet](http://cheat.jekyll.tips/)
