@@ -46,7 +46,10 @@
 
   .sticky & {
     @extend %header-fixed-base;
-    animation: mainnavreveal .3s ease-out;
+    
+    @include breakpoint($screen $navflip) {
+      animation: mainnavreveal .3s ease-out;
+    }
   }
 
   @include breakpoint($screen $navflip) {
