@@ -85,7 +85,8 @@
 
   &--education {
     @extend %splash-base;
-    background-image: url(https://placekitten.com/1766/725);
+    background-image: url(../img/omed-splash-central-2.jpg);
+    /*background-image: url(https://placekitten.com/1766/725);*/
     /* background-image: url(../img/omed-splash-central.jpg); */
   }
 
@@ -102,7 +103,8 @@
 
 
   &__emph {
-    font-family: $font-book;
+    font-family: $font-medium;
+    text-shadow: 3px 3px 3px rgba($verydark, .5);
     letter-spacing: -1px;
     color: $yellow;
 
