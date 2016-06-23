@@ -352,3 +352,9 @@ gulp.task('default', ['build','serve']);
 * Website: [Jekyll Tips](http://jekyll.tips/guide/getting-started-with-jekyll/)
 
 * Website: [Jekyll Cheat Sheet](http://cheat.jekyll.tips/)
+
+#####Thu Jun 23 06:40:57 2016 CDT
+* CMS: [CloudCannon: The Cloud CMS for Jekyll](http://cloudcannon.com/)
+* Blog: [Success Building CMS-less Production Sites with Jekyll](https://thinkshout.com/blog/2014/10/success-building-cmsless-production-sites-with-jekyll/)
+
+* [Snazzy Maps is a repository of different styles for Google Maps aimed towards web designers and developers.](https://snazzymaps.com/)

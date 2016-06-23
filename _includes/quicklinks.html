@@ -1,0 +1,17 @@
+<section class="quicklinks__block container-fluid pageblock wrap">
+  <div class="row center-xs">
+  {% assign items = site.quicklinks | sort: 'order' %}
+  {% for q in items %}
+    <div class="col-xs-12 col-md-4 quicklinks__item">
+      <div class="quicklinks__body">
+        <object id="{{ q.elem_id }}" class="quicklinks__icon" data="{{ q.image_src }}" type="image/svg+xml">
+          <div class="svg-fallback"></div>
+        </object>
+        <h4 class="quicklinks__header">{{ q.title }}</h4>
+        <p class="quicklinks__body">{{ q.content }}</p>
+        <a href="{{ q.link }}" class="btn btn--primary">Go</a>
+      </div> <!-- .quicklinks__body -->
+    </div> <!-- .col -->
+  {% endfor %}
+</section>
+

@@ -17,6 +17,7 @@
 
     .menu__item--active & {
       font-family: $font-bold;
+      color: $teal;
     }
 
     & > i {

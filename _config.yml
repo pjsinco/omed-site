@@ -22,3 +22,6 @@ exclude:
 
 gems:
   - breakpoint
+
+collections:
+  - quicklinks
