@@ -354,7 +354,7 @@
     transition: color $transitionduration ease;
 
     &:hover {
-      color: darken($teal, 20%);
+      color: $teal;
     }
 	}
 	.menu li.has-subnav > a {

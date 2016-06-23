@@ -69,6 +69,7 @@
   &-inside {
     @include breakpoint($screen $navflip) {
       top: $navbarheight;
+      margin-bottom: 8rem;
     }
   }
   
