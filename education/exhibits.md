@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-nosplash
 title: Exhibits
 inside: true
 permalink: /education/exhibits/

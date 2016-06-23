@@ -1,0 +1,9 @@
+<section class="content__right">
+  {% for c in include.callouts %}
+  <aside class="breakout">
+    <h3>{{ c.header }}</h3>
+    {{ c.text }}
+  </aside>
+  {% endfor %}
+</section>
+

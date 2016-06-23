@@ -1,0 +1,9 @@
+<nav class="content__left pagenav__block">
+  <ul class="leftnav__items">
+    {% for item in include.items %}
+    <li class="leftnav__item">
+      <a href="{{ item.link }}">{{ item.title }}</a>
+    </li>
+    {% endfor %}
+</nav>
+

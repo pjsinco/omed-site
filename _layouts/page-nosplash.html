@@ -2,14 +2,6 @@
 layout: default
 ---
 
-{% include splash.html 
-    emph=page.splash.emph
-    header=page.splash.header
-    text=page.splash.text
-    variant=page.splash.variant
-    inside=page.splash.inside
-%}
-
 <div class="container-fluid wrap content">
 
   <!--  Navigation -->
@@ -24,5 +16,6 @@ layout: default
 
   <!--   Callouts -->
   {% include callouts-side.html callouts=page.callouts %}
+
 
 </div> <!-- .content -->
