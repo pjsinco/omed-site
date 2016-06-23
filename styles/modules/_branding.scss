@@ -22,9 +22,37 @@
     }
   }
 
-  &__block {
+  &__body {
+
+    &--footer {
+      max-width: 600px;
+      text-align: center;
+      color: $white;
+
+      p {
+        color: inherit;
+      }
+
+      a {
+        color: inherit;
+        font-family: $font-medium;
+        text-decoration: none;
+      }
+    }
   }
 
+  &__block {
+
+    &--footer {
+      width: 100%;
+      margin-bottom: 1rem;
+      max-width: 420px;
+      
+      @include breakpoint($screen $navflip) {
+        width: 100%;
+      }
+    }
+  }
 
   &--menu {
     @include breakpoint($screen $navflip) {
