@@ -358,3 +358,5 @@ gulp.task('default', ['build','serve']);
 * Blog: [Success Building CMS-less Production Sites with Jekyll](https://thinkshout.com/blog/2014/10/success-building-cmsless-production-sites-with-jekyll/)
 
 * [Snazzy Maps is a repository of different styles for Google Maps aimed towards web designers and developers.](https://snazzymaps.com/)
+
+* StackOverflow: [What are some good ways to implement breadcrumbs on a Jekyll site?](http://stackoverflow.com/questions/9612235/what-are-some-good-ways-to-implement-breadcrumbs-on-a-jekyll-site)

@@ -2,5 +2,41 @@
 layout: default
 ---
 
+{% include splash.html 
+    emph=page.splash.emph
+    header=page.splash.header
+    text=page.splash.text
+    variant=page.splash.variant
+    inside=page.splash.inside
+%}
 
-{{ content }}
+<div class="container-fluid wrap content">
+
+  <!--  Navigation -->
+  <nav class="content__left pagenav__block">
+    <ul class="leftnav__items">
+      {% for item in page.pagenav %}
+      <li class="leftnav__item">
+        <a href="{{ item.link }}">{{ item.title }}</a>
+      </li>
+      {% endfor %}
+  </nav>
+
+  <!--   Main content -->
+  <section class="content__center">
+    <article>
+      {{ content }}
+    </article>
+  </section> <!-- .col -->
+
+  <!--   Callouts -->
+  <section class="content__right">
+    {% for c in page.callouts %}
+    <aside class="breakout">
+      <h3>{{ c.header }}</h3>
+      {{ c.text }}
+    </aside>
+    {% endfor %}
+  </section>
+
+</div> <!-- .content -->
