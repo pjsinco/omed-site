@@ -3,8 +3,6 @@
 }
 
 .footer {
-
-
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: $white;
@@ -15,7 +13,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     @include breakpoint($screen $navflip) {
       
