@@ -4,10 +4,16 @@
   height: 325px;
   width: 100%;
   font-size: 1em;
-  background-size: cover;
+  font-family: $primaryfont;
+  background-size: contain;
   background-position: center top;
   background-repeat: no-repeat;
+  background-color: rgba($teal, .07);
   color: $white;
+
+  @include breakpoint($screen $medium-start) {
+    background-size: cover;
+  }
   
   @include breakpoint($screen $navflip) {
     height: 650px;
@@ -105,9 +111,14 @@
 
   &__emph {
     font-family: $font-medium;
-    text-shadow: 3px 3px 3px rgba($verydark, .5);
-    letter-spacing: -1px;
-    color: $yellow;
+    color: $teal;
+
+    @include breakpoint($screen $medium-start) {
+      text-shadow: 3px 3px 3px rgba($verydark, .5);
+      letter-spacing: -1px;
+      color: $yellow;
+      
+    }
 
     @include breakpoint($navflip) {
       /*font-size: 3.5em;*/
@@ -118,15 +129,27 @@
   }
 
   &__block {
-
     position: absolute;
-    bottom: 5%;
+    bottom: -1vw;
+    padding-bottom: 1rem;
+    position: absolute;
+    color: $font-color;
+
+    @include breakpoint($screen $medium-start) {
+      bottom: 5%;
+      border: none;
+      color: $white;
+    }
   }
 
   &__header {
     /*animation-delay: .7s;*/
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: .5rem;
+
+    @include breakpoint($screen $medium-start) {
+      font-size: 3rem;
+    }
 
     @include breakpoint($screen $navflip) {
       margin-bottom: 1rem;
