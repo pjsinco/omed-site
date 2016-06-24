@@ -363,5 +363,7 @@ gulp.task('default', ['build','serve']);
 
 * Blog: [Adding a .htaccess File to a Jekyll Site](http://davidegan.me/adding-a-htaccess-file-to-a-jekyll-site/)
 
-#####
+#####Fri Jun 24 07:09:32 2016 CDT
 * [http://www.grunticon.com/](http://www.grunticon.com/)
+
+* JS library for parallax: [Stellar.JS](http://markdalgleish.com/projects/stellar.js/)
