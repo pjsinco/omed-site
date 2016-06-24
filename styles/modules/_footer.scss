@@ -3,10 +3,10 @@
 }
 
 .footer {
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
   color: $white;
-  background: $warmgray;
+  background: $teal;
 
   &__block {
     @extend %footer-block-base;

@@ -21,7 +21,7 @@ $(document).ready(function() {
   var windowWidth = $(window).width();
   var $highlightableImage = $('#highlightableImage');
   var $highlightable = $('#highlightable');
-  adjustHighlightableHeight();
+  //adjustHighlightableHeight();
 
   $(document).on('scroll', function(evt) {
     if (!($html).hasClass('revealable')) {
@@ -37,20 +37,20 @@ $(document).ready(function() {
   });
 
   /* TODO just blocking in for now */
-  $(window).on('resize', function(evt) {
-    evt.preventDefault();
-
-    windowWidth = $(window).width();
-
-    if (windowWidth >= actionableScreenWidth) {
-      adjustHighlightableHeight();
-      //$highlightable.height($highlightableImage.height() - difference);
-    } else {
-      $highlightable.css('height', '100%');
-    }
-
-
-  });
+//  $(window).on('resize', function(evt) {
+//    evt.preventDefault();
+//
+//    windowWidth = $(window).width();
+//
+//    if (windowWidth >= actionableScreenWidth) {
+//      adjustHighlightableHeight();
+//      //$highlightable.height($highlightableImage.height() - difference);
+//    } else {
+//      $highlightable.css('height', '100%');
+//    }
+//
+//
+//  });
 
   $menuLink.click(function(evt) {
     evt.preventDefault();
