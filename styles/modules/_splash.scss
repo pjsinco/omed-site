@@ -86,14 +86,14 @@
   
   &--connection {
     @extend %splash-base;
-    background-image: url(../img/omed-splash-poster.jpg);
+    background-image: url(https://placekitten.com/1766/725);
+    /*background-image: url(../img/omed-splash-poster.jpg);*/
     
   }
 
   &--education {
     @extend %splash-base;
-    background-image: url(../img/omed-splash-central-2.jpg);
-    /*background-image: url(https://placekitten.com/1766/725);*/
+    background-image: url(../img/omed-splash-poster.jpg);
     /* background-image: url(../img/omed-splash-central.jpg); */
   }
 

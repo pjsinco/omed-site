@@ -24,18 +24,18 @@ $(document).ready(function() {
   var $highlightable = $('#highlightable');
   //adjustHighlightableHeight();
 
-  $(document).on('scroll', function(evt) {
-    if (!($html).hasClass('revealable')) {
-      return;
-    }
-    var y = $(this).scrollTop();
-    if (y > actionableScrollTop) {
-      $('html').addClass('sticky');
-    } else {
-      $('html').removeClass('sticky');
-    }
-    //console.log('scrolltop: ' + $(this).scrollTop());
-  });
+//  $(document).on('scroll', function(evt) {
+//    if (!($html).hasClass('revealable')) {
+//      return;
+//    }
+//    var y = $(this).scrollTop();
+//    if (y > actionableScrollTop) {
+//      $('html').addClass('sticky');
+//    } else {
+//      $('html').removeClass('sticky');
+//    }
+//    //console.log('scrolltop: ' + $(this).scrollTop());
+//  });
 
   /* TODO just blocking in for now */
 //  $(window).on('resize', function(evt) {
